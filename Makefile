@@ -4,22 +4,27 @@ CFLAGS  := -Wall -Wextra -Werror
 INCDIR  := inc
 
 MAND_SRCS := \
-  src/mandatory/part1/ft_strlen.c \
-  src/mandatory/part1/ft_strchr.c \
-  src/mandatory/part2/ft_substr.c \
-  src/mandatory/part2/ft_strjoin.c \
-  src/mandatory/part2/ft_strtrim.c \
-#   src/mandatory/part2/ft_strdup.c \
-#   src/mandatory/part1/ft_strlcpy.c \
-#   src/mandatory/part1/ft_strlcat.c \
-#   src/mandatory/part1/ft_memcpy.c \
-#   src/mandatory/part1/ft_memmove.c \
-#   src/mandatory/part1/ft_memset.c \
-#   src/mandatory/part1/ft_bzero.c \
-#   src/mandatory/part1/ft_memchr.c \
-#   src/mandatory/part1/ft_memcmp.c \
-#   src/mandatory/part1/ft_atoi.c \
-#   src/mandatory/part1/ft_calloc.c \
+  src/part1/ft_strlen.c \
+  src/part1/ft_strchr.c \
+  src/part2/ft_substr.c \
+  src/part2/ft_strjoin.c \
+  src/part2/ft_strtrim.c \
+  src/part2/ft_putchar.fd \
+  src/part2/ft_putstr.fd \
+  src/part2/ft_strmapi.c \
+  src/part2/ft_striteri.c \
+
+#   src/part2/ft_strdup.c \
+#   src/part1/ft_strlcpy.c \
+#   src/part1/ft_strlcat.c \
+#   src/part1/ft_memcpy.c \
+#   src/part1/ft_memmove.c \
+#   src/part1/ft_memset.c \
+#   src/part1/ft_bzero.c \
+#   src/part1/ft_memchr.c \
+#   src/part1/ft_memcmp.c \
+#   src/part1/ft_atoi.c \
+#   src/part1/ft_calloc.c \
 
 BONUS_SRCS := \
 #   src/bonus/ft_lstnew_bonus.c \

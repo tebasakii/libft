@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: junchoi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: junchoi <junchoi@student.42london.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/28 18:42:00 by junchoi           #+#    #+#             */
-/*   Updated: 2025/10/28 18:42:00 by junchoi          ###   ########.fr       */
+/*   Created: 2025/11/14 06:02:06 by junchoi           #+#    #+#             */
+/*   Updated: 2025/11/16 15:12:42 by junchoi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+t_list  *ft_lstlast(t_list *lst)
 {
-	size_t	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
+    if (!lst)
+        return (NULL);
+    while ((*lst).next)
+        lst = lst->next;
+    return (lst);
 }

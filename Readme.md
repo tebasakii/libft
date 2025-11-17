@@ -5,4 +5,4 @@ Includes Q&A learning logs, tests, and Makefile-based automation.
 
 ## Build
 ```bash
-make
+make x
